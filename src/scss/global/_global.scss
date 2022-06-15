@@ -1,55 +1,57 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .flex {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .--just-space {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .--just-center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .--just-end {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .--align-str {
-	align-items: stretch;
+  align-items: stretch;
 }
 
 .--align-center {
-	align-items: center;
+  align-items: center;
 }
 
 .--align-end {
-	align-items: flex-end;
+  align-items: flex-end;
 }
 
 .--dir-col {
-	flex-direction: column;
+  flex-direction: column;
 }
 
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 html,
 body {
-	min-height: 100%;
-	position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
-	font-size: 1rem;
+  font-size: 1rem;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Genema, Verdana, sans-serif;
+  color: var(--color__text);
 }
 
 ul,
@@ -62,5 +64,39 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
+  margin: 0;
+}
+
+:root {
+  --color__salat: #688800;
+  --color__text: #4A4A4A;
+  --color__gray: #949494;
+  --color__meat: #D73A31;
+  --color__east: #E67F10;
+  --color__italian: #009246;
+  --gradient__salat: linear-gradient(320.69deg, #536614 15.36%, #97C20B 84.86%);
+  --gradient__italian: linear-gradient(320.42deg, #076534 15.36%, #00DB69 82.23%);
+  --gradient__meat: linear-gradient(321.31deg, #99160E 15.37%, #E84239 81.98%);
+  --gradient__east: linear-gradient(324.18deg, #BA6400 14.36%, #FF9D34 85.34%);
+  --shadow__main: 1.25rem 1.25rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.--salat {
+  --main__color: var(--color__salat);
+  --main__gradient: var(--gradient__salat);
+}
+
+.--italian {
+  --main__color: var(--color__italian);
+  --main__gradient: var(--gradient__italian);
+}
+
+.--meat {
+  --main__color: var(--color__meat);
+  --main__gradient: var(--gradient__meat);
+}
+
+.--east {
+  --main__color: var(--color__east);
+  --main__gradient: var(--gradient__east);
 }
