@@ -1,3 +1,40 @@
 .footer {
   background-color: var(--color__salat);
+  padding: 3.25rem 0;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 96rem;
+    position: 1rem;
+    margin: 0 auto;
+  }
+
+  &__social {
+    list-style: none;
+  }
+
+  &__social-item {
+    &+& {
+      margin-left: 2rem;
+    }
+  }
+
+  &__social-link {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    @include btn_anim(1.1, 0.9) &:focus {
+      outline: transparent;
+    }
+
+    &:focus-visible {
+      transform: translateY(-20%);
+    }
+  }
+
+  & .logo {
+    width: 7.25rem;
+    height: 3.5rem;
+  }
 }

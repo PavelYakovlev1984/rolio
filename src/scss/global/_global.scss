@@ -69,6 +69,7 @@ h6 {
 
 :root {
   --color__salat: #688800;
+  --color__main-green: #7DA00C;
   --color__text: #4A4A4A;
   --color__gray: #949494;
   --color__meat: #D73A31;
@@ -99,4 +100,9 @@ h6 {
 .--east {
   --main__color: var(--color__east);
   --main__gradient: var(--gradient__east);
+}
+
+.main {
+  flex: 1 0 auto;
+  min-height: 200vh;
 }
