@@ -9,10 +9,12 @@
     border: 1px solid var(--color__gray);
     border-radius: 0.5rem;
     padding: 0 0.5rem;
+    height: 2rem;
+    width: 2rem;
 
     &:hover {
       background: transparent;
-      color: var(--color__text);
+      color: var(--main__color);
     }
   }
 

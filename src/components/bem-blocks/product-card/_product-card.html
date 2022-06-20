@@ -13,15 +13,14 @@
       </strong>
       @@components
     </p>
-    <div class="product-card__container flex --just-space --align-center">
+    <div class="product-card__container flex --just-space --align-end">
     <div class="product-card__counter counter">
-      <button class="counter__btn" aria-label="Удалить товар">-</button><span class="counter__text">2</span>
-      <button class="counter__btn" aria-label="Добавить товар">+</button>
+      @@include('../counter/_counter.html')
     </div>
     <span class="product-card__volume">@@volume мл.</span>
     <span class="product-card__price">@@price.current руб.</span>
   </div>
-    <div class="product-card__container flex --just-space --align-center">
+    <div class="product-card__container flex --just-space --align-end">
   @@include('../button/_button.html', {
     "class":{
       "bem__elem":"product-card__btn"
