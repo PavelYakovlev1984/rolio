@@ -1,0 +1,12 @@
+.top-slider {
+  .swiper-pagination {}
+
+  .swiper-pagination-bullet {
+    width: auto;
+    height: auto;
+    color: var(--main__color);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--main__color);
+
+  }
+}

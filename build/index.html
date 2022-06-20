@@ -21,8 +21,11 @@
 	<link rel="stylesheet"
 				href="css/libs.min.css">
 	<link rel="stylesheet"
-				href="css/style.min.css">
-	<title>R-olio</title>
+				href="css/style.min.css"><link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+	<title>R-olio</title><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 
@@ -66,7 +69,25 @@
 
 	<main class="main" id="main">
     <section class="top-slider">
-      
+    <h2 class="top-slider__title section-title">
+      Наши продукты
+    </h2>
+<div class="swiper top-slider__slider">
+  <div class="swiper-pagination"></div>
+  <div class="swiper-wrapper">
+    <article class="swiper-slide --salat flex --align-cinter --just-space" data-productname="Для салата">
+1111111111111111111111111111
+</article><article class="swiper-slide --italian flex --align-cinter --just-space" data-productname="Итальянское">
+1111111111111111111111111111
+</article><article class="swiper-slide --meat flex --align-cinter --just-space" data-productname="Для мяса">
+1111111111111111111111111111
+</article><article class="swiper-slide --east flex --align-cinter --just-space" data-productname="Восточное">
+1111111111111111111111111111
+</article>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
     </section>
     <section class="products" id="products">
     <h2 class="products__title section-title">
